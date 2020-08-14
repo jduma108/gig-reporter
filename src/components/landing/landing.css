@@ -1,0 +1,11 @@
+.landingWrapper {
+    background-image: url('../../assets/background.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.slider {
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
