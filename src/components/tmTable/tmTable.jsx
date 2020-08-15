@@ -1,6 +1,8 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
+import './tmTable.css';
+
 class TicketmasterTable extends React.Component {
     render(){
         const { eventResults, searchInput} = this.props
@@ -26,12 +28,13 @@ class TicketmasterTable extends React.Component {
                                         <td className="tableData eventName">{event.name}</td>
                                         <td className="tableData venue">{event._embedded.venues[0].name}</td>
                                         <td className="tableData location">{event._embedded.venues[0].city.name}, {event._embedded.venues[0].country.countryCode}</td>
-                                        <td className="tableData tickets"><a href={event.url} target="_blank" rel="noopener noreferrer">View Event</a></td>
+                                        <td className="tableData tickets"><a href={event.url} target="_blank" rel="noopener noreferrer">View Event >></a></td>
                                     </tr>
                                 </tbody>
                             ))
                         }
                     </table>
+                    <hr></hr>
                 </div>
             </Fade>
         )
