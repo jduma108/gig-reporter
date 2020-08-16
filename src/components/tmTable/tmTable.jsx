@@ -24,11 +24,31 @@ class TicketmasterTable extends React.Component {
                             eventResults.map((event, i) => (
                                 <tbody key={i}>
                                     <tr className="tableRow">
-                                        <td className="tableData date">{event.dates.start.localDate}</td>
-                                        <td className="tableData eventName">{event.name}</td>
-                                        <td className="tableData venue">{event._embedded.venues[0].name}</td>
-                                        <td className="tableData location">{event._embedded.venues[0].city.name}, {event._embedded.venues[0].country.countryCode}</td>
-                                        <td className="tableData tickets"><a href={event.url} target="_blank" rel="noopener noreferrer">View Event >></a></td>
+                                        {
+                                            event.dates.start.localDate !== undefined ?
+                                            <td className="tableData date">{event.dates.start.localDate}</td>
+                                            : <td className="tableData date">Date unknown</td>
+                                        }
+                                        {
+                                            event.name !== undefined ?
+                                            <td className="tableData eventName">{event.name}</td>
+                                            : <td className="tableData eventName">Event name unknown</td>
+                                        }
+                                        {
+                                            event._embedded !== undefined ?
+                                            <td className="tableData venue">{event._embedded.venues[0].name}</td>
+                                            : <td className="tableData venue">Venue unknown</td>
+                                        }
+                                        {
+                                            event._embedded !== undefined ?
+                                            <td className="tableData location">{event._embedded.venues[0].city.name}, {event._embedded.venues[0].country.countryCode}</td>
+                                            : <td className="tableData venue">Location unknown</td>
+                                        }
+                                        {
+                                            event.url !== undefined ?
+                                            <td className="tableData tickets"><a href={event.url} target="_blank" rel="noopener noreferrer">View Event >></a></td>
+                                            : <td className="tableData tickets">Link unavailable</td>
+                                        }
                                     </tr>
                                 </tbody>
                             ))

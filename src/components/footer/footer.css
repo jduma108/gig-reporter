@@ -1,0 +1,23 @@
+.footer {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-top: 2px solid crimson;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding-top: 2.5%;
+    padding-bottom: 3%;
+}
+.iconWrapper {
+    width: 60%;
+    padding-top: 8px;
+}
+.icon {
+    width: 8%;
+    float: right;
+}

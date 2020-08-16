@@ -1,3 +1,7 @@
+## Gig Reporter
+
+Gig Reporter was a final project for my Webpage Production II class I took during my undergrad. Originally this site was written with HTML, CSS, Javascript and PHP. It has been updated using React framework and Axios to call API calls. This web application allows you to search your favorite artists for concert events using the Ticketmaster API and articles about the artists using the New York Times API. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
