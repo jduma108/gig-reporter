@@ -21,3 +21,41 @@
     width: 8%;
     float: right;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1010px) {
+    .icon {
+        width: 10%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .footer p {
+        font-size: 16px;
+        padding-bottom: 6%;
+        padding-top: 4%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .footer p {
+        font-size: 14px;
+    }
+    .icon {
+        width: 12%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .iconWrapper {
+        width: 40%;
+    }
+    .icon {
+        width: 18%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .icon {
+        width: 22%;
+    }
+}

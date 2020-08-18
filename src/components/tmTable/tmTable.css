@@ -63,3 +63,46 @@ hr {
 .tickets {
     width: 15%;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1010px) {
+    .tableData, .tableData a {
+        font-size: 14px;
+    }
+    .tmResults h1 {
+        font-size: 40px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .heading {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .venueHeader, .venue {
+        display: none;
+    }
+    .tmResults h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .locationHeader, .location {
+        display: none;
+    }
+    .tableData, .tableData a {
+        font-size: 12px;
+    }
+    .heading {
+        padding-bottom: 4%;
+    }
+    .tableData {
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+    .tmResults h1 {
+        font-size: 24px;
+    }
+}

@@ -52,3 +52,50 @@
     margin-top: 6%;
     margin-bottom: 4%;
 }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1010px) {
+    .nytResults h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .articleItem p, .articleItem a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nytResults h1 {
+        font-size: 32px;
+    }
+    .articleItem {
+        width: 37%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 8%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nytResults h1 {
+        font-size: 24px;
+        margin-bottom: 8%;
+    }
+    .articleItem {
+        width: 84%;
+        margin-bottom: 8%;
+        padding: 4%;
+    }
+    .articleItem h2 {
+        font-size: 18px;
+    }
+    .articleItem h3 {
+        font-size: 16px;
+        margin-bottom: 2%;
+    }
+    .articleItem p, .articleItem a {
+        font-size: 14px;
+    }
+}

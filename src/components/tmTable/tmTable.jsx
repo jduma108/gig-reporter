@@ -42,7 +42,7 @@ class TicketmasterTable extends React.Component {
                                         {
                                             event._embedded !== undefined ?
                                             <td className="tableData location">{event._embedded.venues[0].city.name}, {event._embedded.venues[0].country.countryCode}</td>
-                                            : <td className="tableData venue">Location unknown</td>
+                                            : <td className="tableData location">Location unknown</td>
                                         }
                                         {
                                             event.url !== undefined ?
